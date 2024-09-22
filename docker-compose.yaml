@@ -1,0 +1,9 @@
+services:
+    app:
+        image: node:22
+        working_dir: /code
+        tty: true
+        volumes:
+            -   ./:/code
+        ports:
+            - 8000:8080
